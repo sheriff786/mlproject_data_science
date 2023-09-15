@@ -1,5 +1,5 @@
 import sys #this library have the information about exceptio
-from logger import logging
+from src.logger import logging
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info() #it will give you the details about the exception
     file_name= exc_tb.tb_frame.f_code.co_filename
